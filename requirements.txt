@@ -22,7 +22,6 @@ pyboolet==1.0.1
 pybullet==3.2.5
 requests==2.28.1
 requests-oauthlib==1.3.1
-robot-gym @ git+https://github.com/TimSchneider42/robot-gym.git@d745c9018c5acc872bedfa4589c7b5bda3c296b1
 rsa==4.9
 scipy==1.9.2
 sisyphus-env @ git+https://github.com/TimSchneider42/sisyphus-env@237177ef112de17265cef81651393385cdaac77d
