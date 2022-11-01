@@ -15,25 +15,25 @@ Each run will create a log dir in `results/` which contains checkpoints and the 
 #### Experiments on flat table (*Tilted Pushing*)
 ```bash
 # Mutual Information
-python main.py -e ball_f02h0 --total-episodes 10000 -i mutual_information
+python main.py new -e ball_f02h0 --total-episodes 10000 -i mutual_information
 
 # Lautum Information
-python main.py -e ball_f02h0 --total-episodes 10000 -i lautum_information -rs 2e5
+python main.py new -e ball_f02h0 --total-episodes 10000 -i lautum_information -rs 2e5
 
 # No intrinsic reward
-python main.py -e ball_f02h0 --total-episodes 10000 --no-intrinsic
+python main.py new -e ball_f02h0 --total-episodes 10000 --no-intrinsic
 ```
 
 #### Experiments on table with holes (*Tilted Pushing Maze*)
 ```bash
 # Mutual Information
-python main.py -e ball_f05h1 --total-episodes 50000 -i mutual_information
+python main.py new -e ball_f05h1 --total-episodes 50000 -i mutual_information
 
 # Lautum Information (here we use an adaptive weighting scheme)
-python main.py -e ball_f05h1 --total-episodes 50000 -i lautum_information -rs 2e5 -a max -awrs 1e8
+python main.py new -e ball_f05h1 --total-episodes 50000 -i lautum_information -rs 2e5 -a max -awrs 1e8
 
 # No intrinsic reward
-python main.py -e ball_f05h1 --total-episodes 50000 --no-intrinsic
+python main.py new -e ball_f05h1 --total-episodes 50000 --no-intrinsic
 ```
 If you want to run a different algorithm on these environments, check out https://github.com/TimSchneider42/sisyphus-env, which contains the environments and an example on how to use them.
 
